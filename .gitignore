@@ -1,2 +1,3 @@
-rush-print-service/dist
+dist
 node_modules
+.idea

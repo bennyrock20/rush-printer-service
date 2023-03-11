@@ -9,12 +9,8 @@ const cors = require('cors')
 const https = require('https');
 const fs = require('fs');
 
-//Check for updates
-require('update-electron-app')()
-
 const escpos = require("escpos");
 escpos.Network = require("escpos-network");
-
 
 function print(host, port, text){
   const device = new escpos.Network(host, port);
